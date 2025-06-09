@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import net.frey.creditcard.interceptors.EncryptedString;
 
 /**
  * Created by jt on 6/27/22.
@@ -19,6 +20,7 @@ public class CreditCard {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @EncryptedString
     private String creditCardNumber;
 
     private String cvv;
