@@ -8,10 +8,9 @@ import net.frey.creditcard.services.EncryptionService;
 import org.hibernate.CallbackException;
 import org.hibernate.Interceptor;
 import org.hibernate.type.Type;
-import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
-@Component
+// @Component
 @RequiredArgsConstructor
 public class EncryptionInterceptor implements Interceptor {
     private final EncryptionService encryptionService;
