@@ -8,10 +8,9 @@ import org.hibernate.event.spi.EventType;
 import org.hibernate.internal.SessionFactoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
-@Configuration
+// @Configuration
 public class ListenerRegistration implements BeanPostProcessor {
     @Autowired
     public void configureListeners(
